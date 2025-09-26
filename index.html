@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <h1>Formulário Básico</h1>
+
+        <div>
+            <label for="slctipoCampo">Tipo de Identificação</label>
+            <select id="slctipoCampo">
+                <option value="nome">Nome</option>
+                <option value="cpf-cnpj">CPF/CNPJ</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="campoPrincipal" id="lblPrincipal">Nome</label>
+            <input id="campoPrincipal"  type="text" placeholder="Digite aqui..." />
+        </div>
+
+        <div class="oculto" id="grupoOutros">
+
+            <label for="descricaoOutros">Descreva o tipo (Outros)</label>
+            <input id="descricaoOutros" type="text" placeholder="Ex: Passporte, OAB"/>
+        </div>
+
+        <div>
+            <button id="btnEnviar" type="button">Enviar</button>
+            <button id="btnLimpar" type="button">Limpar</button>
+        </div>
+
+        <div id="feedback"></div>
+
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
